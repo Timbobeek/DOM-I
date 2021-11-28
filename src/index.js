@@ -40,3 +40,7 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+const someText = document.querySelector('h1');
+someText.textContent = 'DOM Is Awesome';
+
