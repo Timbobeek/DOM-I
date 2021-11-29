@@ -44,8 +44,12 @@ console.log('project wired!')
 
 
 const nav = document.querySelectorAll("a");
+// const nav = document.querySelector
 
 nav[0].textContent = 'Services';
+// nav[0].textContent = siteContent["nav"]["nav-item-1"];
+// nav[0].className = 'italic'  
+//----> alternative way to do it, by gathering values out of the object provided above
 nav[1].textContent = 'Product';
 nav[2].textContent = 'Vision';
 nav[3].textContent = 'Features';
@@ -53,14 +57,20 @@ nav[4].textContent = 'About';
 nav[5].textContent = 'Contact';
 
 nav.forEach(n => n.className = 'italic');
+// nav.forEach(function(n){
+//   return n.className = 'italic';
+// })
+// nav.forEach(n => n.className = header nav a.italic)
 
 const logo = document.querySelector('#logo-img');
 logo.src = "http://localhost:9000/img/logo.png";
+//logo.src = siteContent.images["logo-img"];  ---> alt way
 
 const mainHeader = document.querySelector('h1');
 mainHeader.textContent = 'DOM Is Awesome';
+//mainHeader.textContent = siteContent.cta.h1; ---> alternative
 
-const button = document.querySelector('button');
+const button = document.querySelector('.cta button');
 button.textContent = 'Get Started';
 
 const image1 = document.querySelector('#cta-img');
@@ -68,6 +78,7 @@ image1.src = "http://localhost:9000/img/cta.png";
 
 const contentHeaders = document.querySelectorAll('.main-content h4');
 contentHeaders[0].textContent = 'Features';
+//contentHeaders[0].textContent = siteContent['main-content']['features-h4'];
 contentHeaders[1].textContent = 'About';
 contentHeaders[2].textContent = 'Services';
 contentHeaders[3].textContent = 'Product';
