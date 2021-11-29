@@ -83,6 +83,18 @@ contentHeadersParagraphs[4].textContent = 'Vision content elementum magna eros, 
 const image2 = document.querySelector('#middle-img');
 image2.src = "http://localhost:9000/img/accent.png";
 
+const contactHeader = document.querySelector('.contact h4');
+contactHeader.textContent = 'Contact';
+
+const contactInfo = document.querySelectorAll('.contact p');
+contactInfo[0].textContent = '123 Way 456 Street Somewhere, USA';
+contactInfo[1].textContent = '1 (888) 888-8888';
+contactInfo[2].textContent = 'sales@greatidea.io';
+
+const copyright = document.querySelector('footer a');
+copyright.className = 'bold';
+copyright.textContent = 'Copyright Great Idea! 2021';
+
 
 
 
